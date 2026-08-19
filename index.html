@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task 3</title>
+
+    <style>
+        body{
+            text-align: center;
+            background-color: darkblue;
+        }
+
+        h1{
+            color: lightcyan;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Student Grade Calculator</h1>
+
+<script>
+
+let name = prompt("Enter your name");
+
+let grade1 = Number(prompt("Enter grade 1"));
+let grade2 = Number(prompt("Enter grade 2"));
+let grade3 = Number(prompt("Enter grade 3"));
+
+let total = grade1 + grade2 + grade3;
+let average = total / 3;
+
+if(average >= 50)
+{
+    alert(
+        "Name: " + name +
+        "\nGrade 1 : " + grade1 +
+        "\nGrade 2 : " + grade2 +
+        "\nGrade 3 : " + grade3 +
+        "\nTotal: " + total +
+        "\nAverage: " + average +
+        "\nResult: Pass"
+    );
+}
+else
+{
+    alert(
+        "Name: " + name +
+        "\nGrade 1 : " + grade1 +
+        "\nGrade 2 : " + grade2 +
+        "\nGrade 3 : " + grade3 +
+        "\nTotal: " + total +
+        "\nAverage: " + average +
+        "\nResult: Fail"
+    );
+}
+
+</script>
+
+</body>
+
+</html>
