@@ -2,62 +2,161 @@
 <html>
 
 <head>
-    <title>Task 3</title>
+    <title>LeaveSafe</title>
+    <link rel="stylesheet" href="style.css">
 
-    <style>
-        body{
-            text-align: center;
-            background-color: darkblue;
-        }
-
-        h1{
-            color: lightcyan;
-        }
-    </style>
 </head>
 
 <body>
+   <div class ="container">
+    <div id="home">
+    <h1>Leave Safe</h1>
+    <p>Leave with peace of mind</p>
+    <h2>What is your check ?</h2>
+    <button id="out"> Out for the day ☀️ </button>
+    <button id="sleep"> Going to sleep 🌙 </button>
+    <button id="away"> Away for several days✈️ </button>
+    </div>
 
-<h1>Student Grade Calculator</h1>
+     <div id="checklist1">
+        <h2>Out for the day</h2>
+        <p>Make sure everything is ready before you leave.</p>
+        <label>
+            <input type="checkbox">
+            Windows closed
+       </label>
 
-<script>
+       <label>
+            <input type="checkbox">
+             Stove / oven off
+        </label>
 
-let name = prompt("Enter your name");
+        <label>
+            <input type="checkbox">
+            Unnecessary appliances off
+        </label>
 
-let grade1 = Number(prompt("Enter grade 1"));
-let grade2 = Number(prompt("Enter grade 2"));
-let grade3 = Number(prompt("Enter grade 3"));
+        <label>
+            <input type="checkbox">
+            Chargers unplugged
+        </label>
 
-let total = grade1 + grade2 + grade3;
-let average = total / 3;
+       <label>
+           <input type="checkbox">
+           Taps off
+       </label>
+       <button id="finish1">Finish check</button>
 
-if(average >= 50)
-{
-    alert(
-        "Name: " + name +
-        "\nGrade 1 : " + grade1 +
-        "\nGrade 2 : " + grade2 +
-        "\nGrade 3 : " + grade3 +
-        "\nTotal: " + total +
-        "\nAverage: " + average +
-        "\nResult: Pass"
-    );
-}
-else
-{
-    alert(
-        "Name: " + name +
-        "\nGrade 1 : " + grade1 +
-        "\nGrade 2 : " + grade2 +
-        "\nGrade 3 : " + grade3 +
-        "\nTotal: " + total +
-        "\nAverage: " + average +
-        "\nResult: Fail"
-    );
-}
+     </div>
 
-</script>
+     <div id="checklist2">
 
+        <h2>Going to sleep</h2>
+        <p>Make sure everything is ready before sleeping.</p>
+        <label>
+            <input type="checkbox">
+            Stove / oven turned off
+       </label>
+
+       <label>
+            <input type="checkbox">
+             Candles completely extinguished
+        </label>
+
+        <label>
+            <input type="checkbox">
+            Heaters turned off
+        </label>
+
+       <label>
+           <input type="checkbox">
+           Doors locked
+       </label>
+
+       <label>
+           <input type="checkbox">
+           Windows secured
+       </label>
+
+       <label>
+           <input type="checkbox">
+           Walkways and exits clear
+       </label>
+       <button id="finish2">Finish check</button>
+
+
+     </div>
+
+     <div id="checklist3">
+
+        <h2>Away for several days</h2>
+        <p>Make sure everything is ready before you leave.</p>
+        <label>
+            <input type="checkbox">
+            Doors locked
+       </label>
+
+       <label>
+            <input type="checkbox">
+             Windows secured
+        </label>
+
+        <label>
+            <input type="checkbox">
+            Heaters turned off
+        </label>
+
+        <label>
+            <input type="checkbox">
+            Gas / stove / oven turned off
+        </label>
+
+       <label>
+           <input type="checkbox">
+           Unnecessary electrical devices unplugged
+       </label>
+
+       <label>
+           <input type="checkbox">
+           Water supply checked
+       </label>
+
+       <label>
+           <input type="checkbox">
+           Trash taken out
+       </label>
+
+       <label>
+           <input type="checkbox">
+           Important documents stored safely
+       </label>
+
+       <label>
+           <input type="checkbox">
+           Plants / pets taken care of
+       </label>
+
+       <label>
+           <input type="checkbox">
+           Someone trusted knows you are away
+       </label>
+       <button id="finish3">Finish check</button>
+
+
+     </div>
+     <div id="result">
+        <h2 id="title"></h2>
+        <p id="count"></p>
+        <p id="missingtext"></p>
+     </div>
+     
+
+   </div>
+       
+
+
+
+     <script src = "script.js"></script>
 </body>
 
 </html>

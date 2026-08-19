@@ -1,35 +1,116 @@
-input{
-
-    width:300px;
-
-    padding:10px;
-
-    margin-bottom:15px;
-
+body {
+    background-color: #76b156;
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
 
-textarea{
-
-    width:300px;
-
-    padding:10px;
-
-    margin-bottom:15px;
-
+.container {
+    background-color: white;
+    width: 400px;
+    margin: 100px auto;
+    padding: 40px;
+    border-radius: 15px;
 }
 
-button{
-
-    background-color:red;
-
-    color:white;
-
-    padding:10px;
-
+h1 {
+    color: #2f6b3c;
 }
 
-button:hover{
+p {
+    color: #4f704f;
+}
 
-    background-color:green;
+h2 {
+    color: #214d2b;
+}
 
+button {
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+    padding: 15px;
+
+    background-color: #e3f1dd;
+    color: #214d2b;
+
+    border: 1px solid #a8c99b;
+    border-radius: 10px;
+
+    font-size: 16px;
+}
+/* Checklist */
+
+#checklist1,#checklist2,#checklist3 {
+    text-align: center;
+}
+
+#checklist1 h2
+,#checklist2 h2
+,#checklist3 h2 {
+    color: #2f6b3c;
+    margin-bottom: 10px;
+}
+
+#checklist1 p
+,#checklist2 p
+,#checklist3 p {
+    color: #4f704f;
+    margin-bottom: 30px;
+}
+
+#checklist1 label
+,#checklist2 label
+,#checklist3 label {
+    display: block;
+
+    background-color: #f0f8ec;
+
+    border: 1px solid #b8d7a8;
+
+    border-radius: 10px;
+
+    padding: 14px;
+
+    margin: 12px 0;
+
+    color: #214d2b;
+
+    text-align: left;
+
+    cursor: pointer;
+}
+
+#checklist1 label:hover
+,#checklist2 label:hover
+,#checklist3 label:hover {
+    background-color: #dcefd3;
+}
+
+#checklist1 input
+,#checklist2 input
+,#checklist3 input {
+    margin-right: 10px;
+}
+
+#result {
+    text-align: center;
+    padding: 20px;
+}
+
+#resultTitle {
+    color: #2f6b3c;
+    margin-bottom: 20px;
+}
+
+#resultCount {
+    color: #2f6b3c;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+#missingText {
+    color: #4f704f;
+    line-height: 1.8;
+    margin-top: 20px;
 }
